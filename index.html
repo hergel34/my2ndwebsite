@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      font-family: 'inter';
+      
+    }
+
+    .main-container {
+      width: 60%;
+      margin: auto;
+      
+    }
+
+    header {
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    img {
+      width: 35.5rem;
+    }
+
+    section {
+      margin-top: 1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .Future {
+      display: grid;
+      grid-template-columns: 250px 270px;
+      gap: 3rem;
+      
+    }
+
+    .new {
+      background-color:hsl(240, 100%, 5%);
+      padding: 1rem;
+    }
+
+    .new h2 {
+      color:hsl(35, 77%, 62%);
+      font-size: 2.1rem;
+    }
+
+    .new h3 {
+      color: hsl(36, 100%, 99%);
+      margin-top: 20px;
+      font-size: 15px;
+    }
+    .new h3:hover {
+      color: hsl(35, 77%, 62%);
+    }
+
+    .new p {
+      font-size: 12px;
+      color: rgba(204, 200, 200, 0.894);
+      line-height: 20px;
+    }
+
+    h2 {
+      color: gray;
+      
+    }
+    hr {
+      border: 1px solid rgba(128, 128, 128, 0.678);
+      margin: 20px 0 20px;
+    }
+
+    .grid {
+      margin-top: 4rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .a {
+      line-height: 25px;
+      color: hsl(236, 13%, 42%);
+    }
+
+    .attribution {
+      margin-top: 4rem;
+    }
+
+    .pic {
+      width: 5.5rem;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 100px 170px;
+      
+    }
+     h1 {
+      font-family: 'Poppins';
+      font-size: 50px;
+      font-weight: 600;
+      
+    }
+    h3, p {
+      font-size: 12px;
+      margin: 10px 0;
+
+    }
+    .big {
+      font-size: 40px;
+      line-height: 40px;
+      letter-spacing: 1px;
+    }
+    .para {
+      margin: 0;
+      line-height: 20px;
+      margin-bottom: 20px;
+      color: hsl(236, 13%, 42%);
+    }
+    #img {
+      margin-bottom: 1.5rem;
+    }
+
+    span a {
+      background-color: hsl(5, 85%, 63%);
+      padding: 10px 18px;
+      text-transform: uppercase;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      color: white;
+      cursor: pointer;
+    }
+
+    #read:focus {
+      background-color: rgb(6, 6, 38);
+    }
+    li a:hover {
+      color: hsl(5, 85%, 63%);
+    }
+
+    #img1 {
+      width: 50px;
+    }
+    div h3 {
+      color:hsl(240, 100%, 5%);
+      cursor: pointer;
+    }
+
+    div h3:hover {
+      color:hsl(5, 85%, 63%) ;
+    }
+  </style>
+</head>
+<body>
+<div class="main-container">
+  <header>
+      <img id="img1" src="images/logo.svg" alt="">
+      <nav>
+          <ul>
+            <li><a class="attribution a" href="">Home</a></li>
+            <li><a class="attribution a" href="">New</a></li>
+            <li><a class="attribution a" href="">Popular</a></li>
+            <li><a class="attribution a" href="">Trending</a></li>
+            <li><a class="attribution a" href="">Categories</a></li>
+        </ul>
+      </nav>   
+  </header>
+  <section>
+    <div>
+        <img id="img" src="images/image-web-3-desktop.jpg" alt="">
+        <div class="Future">
+          <h1 class="big">The Bright Future of Web 3.0?</h1>
+          <div>
+            <p class="para">
+              We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+              But is it really fulfilling its promise?
+            </p>
+            <span><a id="read" href="https://www.youtube.com" target="_blank">Read more</a></span>
+          </div>
+        </div>
+    </div>
+  
+    <div class="new">
+      <h2>New</h2>
+  
+      <h3>Hydrogen VS Electric Cars</h3>
+      <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+
+      <hr>
+  
+      <h3>The Downsides of AI Artistry</h3>
+      <p>What are the possible adverse effects of on-demand AI image generation?</p>
+
+      <hr>
+  
+      <h3>Is VC Funding Drying Up?</h3>
+      <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+  </div>
+</section>
+
+  <div class="grid">
+    <div class="container">
+      <img class="pic" src="images/image-retro-pcs.jpg" alt="">
+        <div>
+          <h2>01</h>
+          <h3>Reviving Retro PCs</h3>
+          <p class="a">What happens when old PCs are given modern upgrades?</p>
+        </div>
+    </div>
+    <div class="container">
+      <img class="pic" src="images/image-top-laptops.jpg" alt="">
+      <div>
+        <h2>02</h2>
+        <h3>Top 10 Laptops of 2022</h3>
+        <p class="a">Our best picks for various needs and budgets.</p>
+      </div>
+    </div>
+    <div class="container">
+      <img class="pic" src="images/image-gaming-growth.jpg" alt="">
+      <div>
+        <h2>03</h2>
+        <h3>The Growth of Gaming</h3>
+        <p class="a">How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+  </div>
+ </div> 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
